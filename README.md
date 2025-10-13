@@ -6,8 +6,8 @@ currently supports<br>
 2. `push_back({..})`<br>
 3. `size()`<br>
 4. `collapse()`<br>
-<br>
-Todo<br>
+
+# todo
 1. `Random access`<br>
 2. `arena allocation`<br>
 3. `support for Complex types like structs and classes`<br>
