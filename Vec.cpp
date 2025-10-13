@@ -62,6 +62,31 @@ class Vec {
             
 
         }
+        void pop_back()
+        {
+            if(size > 0)
+            {
+                unuse(1);
+            }
+            else {
+                printf("Error while removing element from an empty Vec");
+                exit(1);
+            }
+        }
+        void pop_back(size_t elements_to_remove)
+        {
+            if(m_size - elements_to_remove >= 0)
+            {
+                m_current_unused_ptr -= elements_to_remove;
+                m_size -= elements_to_remove;
+            }
+            else
+            {
+                printf("Error while removing elements from an empty Vec");
+                exit(1);
+            }
+        }
+        
         
 
 
@@ -111,6 +136,11 @@ class Vec {
         {
             m_current_unused_ptr += size_used;
             m_size += size_used;
+        }
+        void unuse(size_t size_claimed)
+        {
+            m_current_unused_ptr -= size_claimed;
+            m_size -= size_claimed;
         }
         // reserve returns the start of the new allocated memory 
         // use advances the memory pointer to point to the utilized memory 
