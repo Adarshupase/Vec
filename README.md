@@ -20,7 +20,7 @@
 A simple example using `Vec`:<br>
 ```collapse()``` helps you clear up the Vec
 ```cpp
-#include "../Vec.hpp"
+#include "Vec.hpp"
 
 int main() 
 {
@@ -34,7 +34,7 @@ int main()
 ```sub(start,end)``` is used to extract the sub Vector within the vector (end exclusive)
 
 ```cpp
-#include "../Vec.hpp"
+#include "Vec.hpp"
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
@@ -47,7 +47,7 @@ int main()
 
 ```vec[-k]``` gets the kth element from the last
 ```cpp
-#include "../Vec.hpp"
+#include "Vec.hpp"
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
