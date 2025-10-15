@@ -9,7 +9,7 @@
 5. `Random access`<br>
 6. `Multidimensional arrays with simple declaration`<br>
 7. `support for Complex types like structs and classes`<br>
-
+8. `slicing the vector` <br>
 
 ## todo
 1. `arena allocation`<br>
