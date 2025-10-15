@@ -18,8 +18,8 @@
 
 ## Usage Example
 
-A simple example using `Vec`:
-```*collapse()*``` helps you clear up the Vec
+A simple example using `Vec`:<br>
+```collapse()``` helps you clear up the Vec
 ```cpp
 #include "../Vec.hpp"
 
@@ -28,3 +28,23 @@ int main()
     Vec<Vec<float>> fVec = {{2.4f,4.3f,0.0f},{3.0f,5.2221f}};
     fVec.collapse();
 }
+```
+<br>
+
+
+```sub``` is used to extract the sub Vector withing the vector
+
+```cpp
+#include "../Vec.hpp"
+int main()
+{
+    Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
+    Vec<Vec<int>> subvec = vec.sub(1,2);
+    std::cout << subvec << '\n';
+    
+}
+```
+
+
+
+
