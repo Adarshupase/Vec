@@ -32,18 +32,30 @@ int main()
 <br>
 
 
-```sub``` is used to extract the sub Vector withing the vector
+```sub(start,end)``` is used to extract the sub Vector withing the vector (end exclusive)
 
 ```cpp
 #include "../Vec.hpp"
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
-    Vec<Vec<int>> subvec = vec.sub(1,2);
+    Vec<Vec<int>> subvec = vec.sub(1,3); // subVec ={{4,5,},{7,5,8}}
     std::cout << subvec << '\n';
     
 }
 ```
+<br> 
+
+```vec[-k]``` gets the kth element from the last
+```cpp
+#include "../Vec.hpp"
+int main()
+{
+    Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
+    Vec<int> subvec = vec[-2] // vec[-2] is {7,5,8}
+    std::cout << subvec << '\n';
+    
+}
 
 
 
