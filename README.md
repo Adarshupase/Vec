@@ -32,7 +32,7 @@ int main()
 <br>
 
 
-```sub(start,end)``` is used to extract the sub Vector withing the vector (end exclusive)
+```sub(start,end)``` is used to extract the sub Vector within the vector (end exclusive)
 
 ```cpp
 #include "../Vec.hpp"
