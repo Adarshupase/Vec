@@ -14,4 +14,17 @@
 
 ## todo
 1. `arena allocation`<br>
-2. `shuffle function to randomize the array`<br> 
+2. `shuffle function to randomize the array`<br>
+
+## Usage Example
+
+A simple example using `Vec`:
+```*collapse()*``` helps you clear up the Vec
+```cpp
+#include "../Vec.hpp"
+
+int main() 
+{
+    Vec<Vec<float>> fVec = {{2.4f,4.3f,0.0f},{3.0f,5.2221f}};
+    fVec.collapse();
+}
