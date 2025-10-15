@@ -156,20 +156,20 @@ class Vec {
 
             return *(m_container_start + index);
         }
-        Vec<T> sub(size_t start,size_t end)
+        Vec<T> slice(size_t start,size_t end)
         {
             if(start > end || start < 0 || static_cast<size_t>(end) > m_size)
             {
                 printf("Invalid slice range [%zu:%zu]\n", start, end);
                 exit(1);
             }
-            Vec<T> slice ;
-            slice.reserve(end - start);
+            Vec<T> vecSlice ;
+            vecSlice.reserve(end - start);
             for(int i = start ; i < end ; ++i)
             {
-                slice.push_back((*this)[i]);
+                vecSlice.push_back((*this)[i]);
             }
-            return slice;
+            return vecSlice;
             
         }
 
