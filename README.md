@@ -31,15 +31,15 @@ int main()
 <br>
 
 
-```sub(start,end)``` is used to extract the sub Vector within the vector (end exclusive)
+```slice(start,end)``` is used to extract a slice within the vector (end exclusive)
 
 ```cpp
 #include "Vec.hpp"
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
-    Vec<Vec<int>> subvec = vec.sub(1,3); // subVec ={{4,5,6},{7,5,8}}
-    std::cout << subvec << '\n';
+    Vec<Vec<int>> vec_slice = vec.slice(1,3); // vec_slice ={{4,5,6},{7,5,8}}
+    std::cout << vec_slice << '\n';
     
 }
 ```
@@ -51,8 +51,8 @@ int main()
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
-    Vec<int> subvec = vec[-2] // vec[-2] is {7,5,8}
-    std::cout << subvec << '\n';
+    Vec<int> element = vec[-2] // vec[-2] is {7,5,8}
+    std::cout << element << '\n';
     
 }
 
