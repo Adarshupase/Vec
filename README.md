@@ -1,6 +1,6 @@
 #  Vec
 <br>
-*A simple Vector implementation* <br>
+### A simple Vector library for C++
 
 ## currently supports<br>
 1. `primitive types`<br>
