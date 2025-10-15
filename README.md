@@ -39,7 +39,7 @@ int main()
 int main()
 {
     Vec<Vec<int>> vec{{1,2,3},{4,5,6},{7,5,8},{9,10,11}};
-    Vec<Vec<int>> subvec = vec.sub(1,3); // subVec ={{4,5,},{7,5,8}}
+    Vec<Vec<int>> subvec = vec.sub(1,3); // subVec ={{4,5,6},{7,5,8}}
     std::cout << subvec << '\n';
     
 }
