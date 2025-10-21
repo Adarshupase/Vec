@@ -14,7 +14,8 @@ void insertionSort(Vec<Vec<int>>& mat)
         mat[j + 1] = key;
     }
 }
-Vec<Vec<int>> merge(Vec<Vec<int>>& intervals) {
+Vec<Vec<int>> merge(Vec<Vec<int>>& intervals) 
+{
     Vec<Vec<int>> res;
     
     res.push_back(intervals[0]);
@@ -31,7 +32,8 @@ Vec<Vec<int>> merge(Vec<Vec<int>>& intervals) {
     return res;
 }
 
-int main(){
+int main()
+{
     Vec<Vec<int>> intervals = {{1,3},{2,6},{8,10},{15,18}};
     Vec<Vec<int>> res = merge(intervals);
     std::cout << res << '\n';
